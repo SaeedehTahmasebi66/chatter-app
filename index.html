@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>chatter|app</title>
+    <link rel="stylesheet" href="style.css">
     <style>
      
      body{
         background-color: #eeeeee;
      }
     *{
-         font-family: "Arial", "sans-serif"}
+         font-family: "Arial", "sans-serif"
+        }
     h1{
          color: white; background-color: blue;
          }
@@ -19,7 +22,7 @@
             list-style-type: none;  background-color: white; 
             }
         /*transform links to w3w locations in messages to uppercase*/
-    span{
+    b{
         text-transform: uppercase;
         }
     a{
@@ -38,12 +41,7 @@
     em{
         font-style: normal;font-size: larger;
         }
-        div{
-            width: 80%
-            }
-        h4{
-            background-color: white;
-            }
+
     
     </style>
 </head>
@@ -54,34 +52,39 @@
     
     <ul>
     <li>#programers <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> </li>
+    <hr>
     <li>#chemists <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="unliked channel"> </li>
-    <li>#family <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> </li>
+    <hr>
+    <li class="highlighted">#family <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> </li>
+    <hr>
     <li>#friends <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> </li>
+    <hr>
     <li>#sisters <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> </li>
+    <hr>
     </ul>
     
     <!--Tab bar-->
-    <h4>
-    <button style="background-color:#f5f5f5;"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture"> new</button>
-    <button style="background-color:#f5f5f5;"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture"> trending</button>
-    <button style="background-color:#f5f5f5;"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture"> favorit</button>
-    </h4>
+    <div id="tab-bar">
+    <button class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture"> new</button>
+    <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture"> trending</button>
+    <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture"> favorit</button>
+    </div>
     <hr>
 
     <!--chat area-->
     <h1>#friends <small>by cheeses.yard.applies</small> </h1>
-    <div>
-    <h5> <span><a href="https://map.what3words.com/cheeses.yard.applies" target="_blank"> cheeses.yard.applies</a></span> Wed, Jun 5th, 15:20 <em>15 min. left</em></h5>
+    <div class="message" id="myMessage">
+    <h5> <b><a href="https://map.what3words.com/cheeses.yard.applies" target="_blank"> cheeses.yard.applies</a></b> Wed, Jun 5th, 15:20 <em>15 min. left</em></h5>
     <p>hallo</p>
     <button>+5 min</button>
     </div>
-    <div>
-    <h5><span><a href="https://map.what3words.com/truck.cotton.zone" target="_blank"> truck.cotton.zone </a></span> Wed, Jun 5th, 15:27 <em>12 min. left</em></h5>
+    <div class="message">
+    <h5><b><a href="https://map.what3words.com/truck.cotton.zone" target="_blank"> truck.cotton.zone </a></b> Wed, Jun 5th, 15:27 <em>12 min. left</em></h5>
     <p>wie get es dir?</p>
     <button>+5 min</button>
     </div>
-    <div>
-    <h5><span><a href="https://map.what3words.com/thus.best.dishes" target="_blank"> thus.best.dishes</a></span> Wed, Jun 5th, 15:30 <em>10 min. left</em></h5>
+    <div class="message">
+    <h5><b><a href="https://map.what3words.com/thus.best.dishes" target="_blank"> thus.best.dishes</a></b> Wed, Jun 5th, 15:30 <em>10 min. left</em></h5>
     <p>Sie sind veheiratet</p>
     <button>+5 min</button>
     </div>

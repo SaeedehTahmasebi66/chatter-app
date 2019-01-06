@@ -1,0 +1,83 @@
+/*Global sections*/
+body{
+    background-color: #eeeeee;
+    font-family: "Arial", "sans-serif";
+ }
+*{
+     margin: 0px;
+     padding: 0px;
+    }
+ button,b{
+    text-transform: uppercase;
+ }
+/*App bar*/
+h1{
+    color: white;
+    background-color: blue;
+    }
+/*Channels list*/
+ul{
+    list-style-type: none;
+    background-color: white; 
+    }
+    ul li.highlighted{
+        border-left: 4px solid blue;
+        color: blue;
+    }
+    li{
+        padding: 16px;
+        height: 16px;
+        box-sizing: content-box;
+    }
+    li img{
+        vertical-align: middle;
+    }
+/*Tab bar*/
+#tab-bar{
+    background-color: white;
+}
+#tab-bar button{
+    text-align: center;
+    background-color: white;
+    font-size: 13px;
+    border: none;
+    width: 33%;
+    height: 72px;
+    padding: 16px;
+}
+#tab-bar img{
+display: block;
+margin: auto;
+margin-bottom: 4px;
+}
+#tab-bar button.selected{
+    border-bottom: 4px solid blue;
+    color: blue;
+}
+/*Messages*/
+div.message{
+    width: 80%;
+    margin-bottom: 8px;
+    margin-left: 2.5%;
+}
+.message p{
+    background-color: white;
+    padding: 16px;
+}
+.message h5{
+    font-size: medium;
+}
+.message button{
+    background-color:#CDDC39;
+    text-transform: uppercase;
+}
+.message em{
+    font-style: normal;
+    font-size: larger;
+}
+.message a{
+    color: black;
+}
+#myMessage{
+    margin-left: 17.5%;
+}
