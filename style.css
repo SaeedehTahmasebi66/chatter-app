@@ -81,3 +81,18 @@ div.message{
 #myMessage{
     margin-left: 17.5%;
 }
+/*new stuff*/
+.channel-area{
+    height: 100%;
+    position: absolute ;
+    width: 40%;
+    left: 0px;
+}
+.chat-area{
+    height: 100%;
+    position: absolute ;
+    width: 60%;
+    right: 0px;
+}
+
+
