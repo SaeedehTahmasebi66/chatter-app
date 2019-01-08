@@ -35,6 +35,9 @@ ul{
 /*Tab bar*/
 #tab-bar{
     background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
 #tab-bar button{
     text-align: center;
