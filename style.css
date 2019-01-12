@@ -1,7 +1,7 @@
 /*Global sections*/
 body{
     background-color: #eeeeee;
-    font-family: "Arial", "sans-serif";
+    font-family: "Roboto", "sans-serif";
  }
 *{
      margin: 0px;
@@ -19,38 +19,52 @@ h1{
 ul{
     list-style-type: none;
     background-color: white; 
-    }
-    ul li.highlighted{
-        border-left: 4px solid blue;
-        color: blue;
+    position: absolute;
+    top: 98px;
+    bottom: 72px;
+    overflow-y : scroll;
+    width: 100%;
     }
     li{
         padding: 16px;
         height: 16px;
         box-sizing: content-box;
     }
+    ul li.highlighted{
+        border-left: 4px solid blue;
+        color: blue;
+    }
+   
+    /*align icons to the text’s middle*/
     li img{
         vertical-align: middle;
     }
 /*Tab bar*/
-#tab-bar{
+.bar{
     background-color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
 }
-#tab-bar button{
+.buttonBar{
     text-align: center;
-    background-color: white;
+    background-color:white;
     font-size: 13px;
     border: none;
-    width: 33%;
+    width: 32%;
     height: 72px;
     padding: 16px;
+    
 }
 #tab-bar img{
 display: block;
 margin: auto;
 margin-bottom: 4px;
 }
-#tab-bar button.selected{
+#selected{
     border-bottom: 4px solid blue;
     color: blue;
 }
@@ -63,6 +77,7 @@ div.message{
 .message p{
     background-color: white;
     padding: 16px;
+    position: relative;
 }
 .message h5{
     font-size: medium;
@@ -70,6 +85,9 @@ div.message{
 .message button{
     background-color:#CDDC39;
     text-transform: uppercase;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
 }
 .message em{
     font-style: normal;
@@ -94,5 +112,40 @@ div.message{
     width: 60%;
     right: 0px;
 }
-
+h1{
+    padding: 16px;
+    height: 65px;
+}
+#Moocus{
+    
+}
+.channel-meta{
+    vertical-align: middle;
+    position: absolute;
+    right: 5px;
+}
+    /*Distribute the meta-data’s contents */
+h5{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+    /*Let all dates appear in one column*/
+h5 span{
+    width: 145px;
+    display: flex;
+    flex-direction: column;
+}
+#emojis-button{
+    display: flex;
+    justify-content: flex-start;
+}
+#emojis{
+    background-color: white;
+    border: 1px solid black;
+    
+    font-size: 28px;
+    text-align: left;
+    overflow: auto;
+}
 

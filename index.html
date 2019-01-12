@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>chatter|app</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <style>
      
      body{
         background-color: #eeeeee;
      }
     *{
-         font-family: "Arial", "sans-serif"
+         font-family: "Roboto", "sans-serif"
         }
     h1{
          color: white; background-color: blue;
@@ -48,27 +49,29 @@
 <body>
         <!--chanenl area-->
 <div class="channel-area">
-    <h1><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus Image" style="height:56px;"> chatter|app</h1>
+    <h1><img id="Moocus" src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus Image" style="height:56px;"> chatter|app</h1>
 
 
     <ul>
-    <li>#programers <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> </li>
+
+    <li>#programers <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
-    <li>#chemists <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="unliked channel"> </li>
+    <li>#chemists <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="unliked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
-    <li class="highlighted">#family <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> </li>
+    <li class="highlighted">#family <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
-    <li>#friends <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> </li>
+    <li>#friends <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
-    <li>#sisters <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> </li>
+    <li>#sisters <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
+    
     </ul>
     
     <!--Tab bar-->
-    <div id="tab-bar">
-    <button class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture"> new</button>
-    <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture"> trending</button>
-    <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture"> favorit</button>
+    <div id="tab-bar" class="bar">
+    <button id="selected" class="buttonBar"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture"> new</button>
+    <button class="buttonBar"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture"> trending</button>
+    <button class="buttonBar"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture"> favorit</button>
     </div>
 </div>
 
@@ -76,19 +79,23 @@
 <div class="chat-area">
     <h1>#friends <small>by cheeses.yard.applies</small> </h1>
     <div class="message" id="myMessage">
-    <h5> <b><a href="https://map.what3words.com/cheeses.yard.applies" target="_blank"> cheeses.yard.applies</a></b> Wed, Jun 5th, 15:20 <em>15 min. left</em></h5>
-    <p>hallo</p>
-    <button>+5 min</button>
+    <h5> <b><a href="https://map.what3words.com/cheeses.yard.applies" target="_blank"> cheeses.yard.applies</a></b> <span> Wed, Jun 5th, 15:20 </span> <em>15 min. left</em></h5>
+    <p>hallo <button>+5 min</button> </p>
     </div>
+    
     <div class="message">
-    <h5><b><a href="https://map.what3words.com/truck.cotton.zone" target="_blank"> truck.cotton.zone </a></b> Wed, Jun 5th, 15:27 <em>12 min. left</em></h5>
-    <p>wie get es dir?</p>
-    <button>+5 min</button>
+    <h5><b><a href="https://map.what3words.com/truck.cotton.zone" target="_blank"> truck.cotton.zone </a></b> <span> Wed, Jun 5th, 15:27 </span> <em>12 min. left</em></h5>
+    <p>wie get es dir? <button>+5 min</button> </p>
     </div>
+
     <div class="message">
-    <h5><b><a href="https://map.what3words.com/thus.best.dishes" target="_blank"> thus.best.dishes</a></b> Wed, Jun 5th, 15:30 <em>10 min. left</em></h5>
-    <p>Sie sind veheiratet</p>
-    <button>+5 min</button>
+    <h5><b><a href="https://map.what3words.com/thus.best.dishes" target="_blank"> thus.best.dishes</a></b> <span> Wed, Jun 5th, 15:30 </span> <em>10 min. left</em></h5>
+    <p>Sie sind veheiratet <button>+5 min</button></p>
+    </div>
+ <!--smileys -->   
+    <div id="chat-bar" class="bar">
+        <button id="emojis-button" class="buttonBar"><img src="http://ip.lfe.mw.tum.de/sections/smile-o.png"></button>
+        <div id="emojis"> &x1F601; &x1F602; &x1F603; &x1F604; &x1F605;</div>
     </div>
 </div>
 
