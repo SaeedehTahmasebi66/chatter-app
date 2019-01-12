@@ -74,13 +74,16 @@ ul{
     bottom: 0px;
     right: 0px;
     left: 0px;
+    /*Pick up the tab bar*/
+    display: flex;
+    justify-content: space-between;
 }
 #tab-bar button{
     text-align: center;
     background-color: white;
     font-size: 13px;
     border: none;
-    width: 32.75%;
+    width: 33%;
     height: 72px;
     padding: 16px;
 }
