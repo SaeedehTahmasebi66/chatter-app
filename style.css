@@ -33,7 +33,7 @@ h1{
     font-size: 16px;
     width: 100%;
     letter-spacing: 0.5px;
-    padding-left: 72px;
+    /* padding-left: 72px;     this code cause scroll below my app! */
     }
     #Moocus{
         position: absolute;
@@ -151,4 +151,11 @@ h5{ /*4. Distribute the meta-data’s contents */
     overflow: auto;
 }
 
+#chat-scroll{  /*7. Scroll through the messages*/
+    position: absolute;
+    top: 56px;
+    bottom: 72px;
+    width: 100%;
+    overflow-y: scroll;
+}
 
