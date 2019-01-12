@@ -133,8 +133,22 @@ h5{ /*4. Distribute the meta-data’s contents */
     justify-content: space-between;
     align-items: flex-end;
 }
-#emojis-button{ /*put emojis-button on the very left, Considering to cascading order */
+#emojis-button{ /*5.put emojis-button on the very left, Considering to cascading order */
     display: flex;
     justify-content: flex-start;
 }
+#emojis{ /*6.Set the style of emojis*/
+    background-color: white;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    padding: 16px;
+    position: absolute;
+    bottom: 65px;
+    left: 16px;
+    font-size: 28px;
+    text-align: left;
+    overflow: auto;
+}
+
 
