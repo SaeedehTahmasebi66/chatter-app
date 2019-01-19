@@ -58,7 +58,7 @@ ul{
     top: 56px;
     bottom: 72px;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     }
     ul li.highlighted{
         border-left: 4px solid blue;
@@ -166,7 +166,7 @@ h5{ /*5.4. Distribute the meta-data’s contents */
     top: 56px;
     bottom: 72px;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 #emojis{
     visibility:hidden;
