@@ -127,9 +127,9 @@ div.message{
     right: 8px;
     bottom: 8px;
 }
-.message em{
-    font-style: normal;
-    font-size: larger;
+.message em{ 
+    font-style: normal; 
+    font-size: larger; /*Make the remaining message time larger and non-italic without changing the HTML*/
 }
 .message a{
     color: black;
