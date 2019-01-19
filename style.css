@@ -169,6 +169,6 @@ h5{ /*5.4. Distribute the meta-data’s contents */
     overflow-y: auto;
 }
 #emojis{
-    visibility:hidden;
+    display: none;
 }
 

@@ -35,9 +35,9 @@
     
     <!--Tab bar-->
     <div id="tab-bar">
-    <button class="selected" onclick="selectTab();"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture"> new</button>
-    <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture"> trending</button>
-    <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture"> favorit</button>
+    <button id="newTab" class="selected" onclick="selectTab(); selectTab(newTab);"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture"> new</button>
+    <button id="trendingTab" onclick="selectTab(trendingTab);"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture"> trending</button>
+    <button id="favoritTab" onclick="selectTab(favoritTab);"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture"> favorit</button>
     </div>
 
 </div>
@@ -67,7 +67,7 @@
 </div>  
 
     <div id="chat-bar">
-        <button id="emojis-button">
+        <button id="emojis-button" onclick="emojiBox();">
             <img src="http://ip.lfe.mw.tum.de/sections/smile-o.png">
         </button>
         <div id="emojis">

@@ -15,10 +15,11 @@ function filledStar(){
 }
 
 //6.4. Tap tabs
-function selectTab(){
+function selectTab(tabId){
     $("button.selected").removeClass("selected");
+    $(tabId).addClass("selected");
 }
 //6.5. Toggle emoji box onclick
 function emojiBox(){
-    $( ).toggle();
+    $("div #emojis").toggle();
 }
