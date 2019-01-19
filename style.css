@@ -33,13 +33,23 @@ h1{
     font-size: 16px;
     width: 100%;
     letter-spacing: 0.5px;
-    /* padding-left: 72px;     this code cause scroll below my app! */
+    position: relative;
+    line-height: 56px;
     }
     #Moocus{
         position: absolute;
         top: 0px;
         left: 16px;
+        height:56px;
     }
+    #app-name{
+        position: absolute;
+        left: 72px;
+        height: 56px;
+        line-height: 56px;
+    }
+
+
 /*Channels list*/
 ul{
     list-style-type: none;
@@ -65,7 +75,7 @@ ul{
     .channel-meta{
         vertical-align: middle;
         position: absolute;
-        right: 5px;
+        right: 16px;
     }
 /*Tab bar*/
 #tab-bar , #chat-bar{
@@ -74,7 +84,7 @@ ul{
     bottom: 0px;
     right: 0px;
     left: 0px;
-    /*3.Pick up the tab bar*/
+    /*5.3.Pick up the tab bar*/
     display: flex;
     justify-content: space-between;
 }
@@ -113,7 +123,7 @@ div.message{
 .message button{
     background-color:#CDDC39;
     text-transform: uppercase;
-    position: absolute; /*4.Reposition the “+5 min” buttons*/
+    position: absolute; /*5.4.Reposition the “+5 min” buttons*/
     right: 8px;
     bottom: 8px;
 }
@@ -128,16 +138,16 @@ div.message{
     margin-left: 17.5%;
 }
     
-h5{ /*4. Distribute the meta-data’s contents */
+h5{ /*5.4. Distribute the meta-data’s contents */
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-#emojis-button{ /*5.put emojis-button on the very left, Considering to cascading order */
+#emojis-button{ /*5.5.put emojis-button on the very left, Considering to cascading order */
     display: flex;
     justify-content: flex-start;
 }
-#emojis{ /*6.Set the style of emojis*/
+#emojis{ /*5.6.Set the style of emojis*/
     background-color: white;
     border: 1px solid black;
     height: 200px;
@@ -151,11 +161,14 @@ h5{ /*4. Distribute the meta-data’s contents */
     overflow: auto;
 }
 
-#chat-scroll{  /*7. Scroll through the messages*/
+#chat-scroll{  /*5.7. Scroll through the messages*/
     position: absolute;
     top: 56px;
     bottom: 72px;
     width: 100%;
     overflow-y: scroll;
+}
+#emojis{
+    visibility:hidden;
 }
 

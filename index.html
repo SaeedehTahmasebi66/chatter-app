@@ -9,6 +9,8 @@
     <title>chatter|app</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
     <style>
      
      body{
@@ -51,26 +53,26 @@
 
 <div class="left-area">
     
-    <h1><img id="Moocus" src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus Image" style="height:56px;"> chatter|app</h1>
+    <h1><img id="Moocus" src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus Image"> <span id="app-name"> chatter|app </span></h1>
 
     <!--chanenl area-->
     
     <ul>
-    <li>#programers <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
+    <li onclick="switchChannel('#programers'); unfilledStar();">#programers <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
-    <li>#chemists <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="unliked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
+    <li onclick="switchChannel('#chemists'); unfilledStar();">#chemists <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="unliked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
-    <li class="highlighted">#family <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
+    <li onclick="switchChannel('#family'); unfilledStar();" class="highlighted">#family <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
-    <li>#friends <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
+    <li onclick="switchChannel('#friends'); unfilledStar();">#friends <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
-    <li>#sisters <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
+    <li onclick="switchChannel('#sisters'); unfilledStar();"> #sisters <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
     <hr>
     </ul>
     
     <!--Tab bar-->
     <div id="tab-bar">
-    <button class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture"> new</button>
+    <button class="selected" onclick="selectTab();"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture"> new</button>
     <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture"> trending</button>
     <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture"> favorit</button>
     </div>
@@ -80,7 +82,8 @@
 <div class="right-area">
 
     <!--chat area-->
-    <h1>#friends <small>by cheeses.yard.applies</small> </h1>
+    <h1> <span id="chatName"> #family </span> <small>by <b><a id="locateName" href="https://map.what3words.com/cheeses.yard.applies" target="_blank" style="color:white;"> cheeses.yard.applies</a></b> </small>
+        <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel" class="channel-meta" id="appStar" onclick="filledStar()"> </h1>
 
  <div id="chat-scroll">
     <div class="message" id="myMessage">
