@@ -16,60 +16,113 @@
 
 <div class="left-area">
     
-    <h1><img id="Moocus" src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus Image"> <span id="app-name"> chatter|app </span></h1>
+<h1>
+    <img id="Moocus" src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus Image">
+    <span id="app-name">chatter|app</span>
+</h1>
 
-    <!--chanenl area-->
+<!--chanenl area-->
+<ul>
+    <li onclick="switchChannel('#programers'); unfillStar();">#programers
+        <span class="channel-meta">
+            <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel">
+            <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic">
+        </span>
+    </li>
+    <hr>
+    <li onclick="switchChannel('#chemists'); unfillStar();">#chemists
+        <span class="channel-meta">
+            <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="unliked channel">
+            <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic">
+        </span>
+    </li>
+    <hr>
+    <li onclick="switchChannel('#family'); unfillStar();" class="highlighted">#family
+        <span class="channel-meta">
+            <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel">
+            <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic">
+        </span>
+    </li>
+    <hr>
+    <li onclick="switchChannel('#friends'); unfillStar();">#friends
+        <span class="channel-meta">
+            <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel">
+            <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic">
+        </span>
+    </li>
+    <hr>
+    <li onclick="switchChannel('#sisters'); unfillStar();"> #sisters
+        <span class="channel-meta">
+            <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel">
+            <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic">
+        </span>
+    </li>
+    <hr>
+</ul>
     
-    <ul>
-    <li onclick="switchChannel('#programers'); unfilledStar();">#programers <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
-    <hr>
-    <li onclick="switchChannel('#chemists'); unfilledStar();">#chemists <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="unliked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
-    <hr>
-    <li onclick="switchChannel('#family'); unfilledStar();" class="highlighted">#family <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
-    <hr>
-    <li onclick="switchChannel('#friends'); unfilledStar();">#friends <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
-    <hr>
-    <li onclick="switchChannel('#sisters'); unfilledStar();"> #sisters <span class="channel-meta"> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel"> <img src="https://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron-right pic"> </span> </li>
-    <hr>
-    </ul>
-    
-    <!--Tab bar-->
-    <div id="tab-bar">
-    <button id="newTab" class="selected" onclick="selectTab(newTab);"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture"> new</button>
-    <button id="trendingTab" onclick="selectTab(trendingTab);"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture"> trending</button>
-    <button id="favoritTab" onclick="selectTab(favoritTab);"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture"> favorit</button>
-    </div>
+<!--Tab bar-->
+<div id="tab-bar">
+    <button id="newTab" class="selected" onclick="selectTab(newTab);">
+        <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb picture">new
+    </button>
+    <button id="trendingTab" onclick="selectTab(trendingTab);">
+        <img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture">trending
+    </button>
+    <button id="favoritTab" onclick="selectTab(favoritTab);">
+        <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture">favorit
+    </button>
+</div>
 
 </div>
 
 <div class="right-area">
 
-    <!--chat area-->
-    <h1> <span id="chat-head"> <span id="chatName"> #family </span> <small>by <b><a id="locateName" href="https://map.what3words.com/cheeses.yard.applies" target="_blank" style="color:white;"> cheeses.yard.applies</a></b> </small> </span>
-        <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="liked channel" class="channel-meta" id="appStar" onclick="filledStar();"> </h1>
+<!--chat area-->
+<h1>
+    <span id="chat-head"> <span id="chatName"> #family </span>
+    <small>by<b><a id="locateName" 
+        href="https://map.what3words.com/cheeses.yard.applies" 
+        target="_blank" style="color:white;"> cheeses.yard.applies</a></b>
+    </small></span>
+    <img src="https://ip.lfe.mw.tum.de/sections/star.png" 
+    alt="liked channel" class="channel-meta" id="appStar" onclick="fillStar();">
+</h1>
 
- <div id="chat-scroll">
-    <div class="message" id="myMessage">
-    <h5> <b><a href="https://map.what3words.com/cheeses.yard.applies" target="_blank"> cheeses.yard.applies</a></b> Wed, Jun 5th, 15:20 <em>15 min. left</em></h5>
-    <p>hallo <button>+5 min</button> </p>
-    </div>
+<div id="chat-scroll">
 
-    <div class="message">
-    <h5><b><a href="https://map.what3words.com/truck.cotton.zone" target="_blank"> truck.cotton.zone </a></b> Wed, Jun 5th, 15:27 <em>12 min. left</em></h5>
-    <p>wie get es dir? <button>+5 min</button> </p>
-    </div>
+<div class="message" id="myMessage">
+    <h5>
+        <b><a href="https://map.what3words.com/cheeses.yard.applies" 
+            target="_blank"> cheeses.yard.applies</a>
+        </b>Wed, Jun 5th, 15:20<em>15 min. left</em>
+    </h5>
+    <p>hallo<button>+5 min</button></p>
+</div>
 
-    <div class="message">
-    <h5><b><a href="https://map.what3words.com/thus.best.dishes" target="_blank"> thus.best.dishes</a></b> Wed, Jun 5th, 15:30 <em>10 min. left</em></h5>
+<div class="message">
+    <h5>
+        <b><a href="https://map.what3words.com/truck.cotton.zone" 
+            target="_blank">truck.cotton.zone</a>
+        </b>Wed, Jun 5th, 15:27<em>12 min. left</em>
+    </h5>
+    <p>wie get es dir? <button>+5 min</button></p>
+</div>
+
+<div class="message">
+    <h5>
+        <b><a href="https://map.what3words.com/thus.best.dishes" 
+            target="_blank"> thus.best.dishes</a>
+        </b>Wed, Jun 5th, 15:30 <em>10 min. left</em>
+    </h5>
     <p>Sie sind veheiratet. <button>+5 min</button></p>
-    </div>
+</div>
 
 </div>  
 
-    <div id="chat-bar">
-        <button id="emojis-button" onclick="emojiBox();">
-            <img src="http://ip.lfe.mw.tum.de/sections/smile-o.png">
-        </button>
+<div id="chat-bar">
+    <button id="emojis-button" onclick="toggleEmojiBox();">
+        <img src="http://ip.lfe.mw.tum.de/sections/smile-o.png">
+    </button>
         <div id="emojis">
             &#x1F601  &#x1F602  &#x1F603  &#x1F604  &#x1F605 
         </div>
