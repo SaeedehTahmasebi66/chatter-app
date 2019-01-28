@@ -12,8 +12,10 @@ function unfillStar() {
 }
 
 function fillStar() {
-  $('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star.png');
-}
+ /* $('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star.png'); */
+  $("#appStar").toggleClass("fas fa-star");
+} 
+
 
 //6.4. Tap tabs
 function selectTab(tabId) {
