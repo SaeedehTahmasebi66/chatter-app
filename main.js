@@ -14,7 +14,7 @@ function unfillStar() {
 
 function fillStar() {
  /* $('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star.png'); */
-  $("#appStar").toggleClass("fas fa-star");
+  $("#appStar").toggleClass("fas");
 } 
 
 
