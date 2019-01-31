@@ -8,7 +8,8 @@ function switchChannel(channelName) {
 
 //6.3. Favor channels
 function unfillStar() {
-  $('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star-o.png');
+  /*$('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star-o.png');*/
+  
 }
 
 function fillStar() {
