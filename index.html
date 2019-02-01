@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="jquery-3.3.1.min.js"></script>
     <script src="main.js"></script>
+    <script src="channels.js"></script>
     <link rel="stylesheet" 
     href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
@@ -27,35 +28,35 @@
 
 <!--chanenl area-->
 <ul>
-    <li onclick="switchChannel('#programers'); unfillStar();">#programers
+    <li onclick="switchChannel(programers.name , programers.createdBy); unfillStar();">#programers
         <span class="channel-meta">
             <i class="fas fa-star"></i>
             <i class="fas fa-chevron-right"></i>
         </span>
     </li>
     <hr>
-    <li onclick="switchChannel('#chemists'); unfillStar();">#chemists
+    <li onclick="switchChannel(chemists.name , chemists.createdBy); unfillStar();">#chemists
         <span class="channel-meta">
             <i class="far fa-star"></i>
             <i class="fas fa-chevron-right"></i>
         </span>
     </li>
     <hr>
-    <li onclick="switchChannel('#family'); unfillStar();" class="highlighted">#family
+    <li onclick="switchChannel(family.name , family.createdBy); unfillStar();" class="highlighted">#family
         <span class="channel-meta">
             <i class="fas fa-star"></i>
             <i class="fas fa-chevron-right"></i>
         </span>
     </li>
     <hr>
-    <li onclick="switchChannel('#friends'); unfillStar();">#friends
+    <li onclick="switchChannel(friends.name , friends.createdBy); unfillStar();">#friends
         <span class="channel-meta">
             <i class="fas fa-star"></i>
             <i class="fas fa-chevron-right"></i>
         </span>
     </li>
     <hr>
-    <li onclick="switchChannel('#sisters'); unfillStar();"> #sisters
+    <li onclick="switchChannel(sisters.name , sisters.createdBy); unfillStar();"> #sisters
         <span class="channel-meta">
             <i class="fas fa-star"></i>
             <i class="fas fa-chevron-right"></i>

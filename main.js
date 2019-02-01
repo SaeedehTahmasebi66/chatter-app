@@ -1,9 +1,9 @@
 
 //6.2. Switch channels
-function switchChannel(channelName) {
+function switchChannel(channelName , chanelLocate) {
   console.log('Tuning into channel' + channelName);
   document.getElementById('chatName').innerHTML = channelName;
-  document.getElementById('locateName').innerHTML = 'upgrading.never.helps';
+  document.getElementById('locateName').innerHTML = chanelLocate;
 }
 
 //6.3. Favor channels
