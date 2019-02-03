@@ -4,7 +4,7 @@ var programers = {
   name: "#programers",
   createdOn: new Date(2016,3,1),
   createdBy: "minus.plus.yummy",
-  starred: false,
+  starred: true,
   expiresIn: 100,
   messageCount: 999
 };
@@ -29,7 +29,7 @@ var chemists = {
     name: "#friends",
     createdOn: new Date(2016,8,16),
     createdBy: "thus.best.dishes",
-    starred: false,
+    starred: true,
     expiresIn: 760,
     messageCount: 843
   };

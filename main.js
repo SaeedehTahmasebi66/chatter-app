@@ -1,16 +1,16 @@
 
 //6.2. Switch channels
-function switchChannel(channelName , chanelLocate) {
-  console.log('Tuning into channel' + channelName);
-  document.getElementById('chatName').innerHTML = channelName;
-  document.getElementById('locateName').innerHTML = chanelLocate;
+function switchChannel(channel) {
+  console.log('Tuning into channel' + channel.name);
+  document.getElementById('chatName').innerHTML = channel.name;
+  document.getElementById('locateName').innerHTML = channel.createdBy;
 }
 
 //6.3. Favor channels
-function unfillStar() {
-  /*$('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star-o.png');*/
+//function unfillStar() {
+  //$('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star-o.png');
   
-}
+//}
 
 function fillStar() {
  /* $('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star.png'); */
