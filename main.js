@@ -1,21 +1,39 @@
-
+var currentChannel = family;
+var currentLocation = {
+  longitude: "",
+  latitude: "",
+  what3words: ""
+}
 //6.2. Switch channels
 function switchChannel(channel) {
-  console.log('Tuning into channel' + channel.name);
-  document.getElementById('chatName').innerHTML = channel.name;
-  document.getElementById('locateName').innerHTML = channel.createdBy;
+  console.log('Turning into channel' + channel.name);
+  $('#chatName').html(channel.name);
+  $('#locateName').html(channel.createdBy);
+
+    //highlight the channells 
+  $("ul li.highlighted").removeClass("highlighted");
+  $(channel.name).addClass("highlighted");
+  
+  var star = (channel.starred) ? 'fas' : 'far';
+  $("#appStar").removeClass("fas far");
+  $("#appStar").addClass(star);
+  
+  currentChannel =channel;
+ 
 }
 
-//6.3. Favor channels
-//function unfillStar() {
-  //$('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star-o.png');
+//Toggle the channel stars
+function toggleChannelStar() {
+  $("#appStar").toggleClass("fas far");
   
-//}
 
-function fillStar() {
- /* $('#appStar').attr('src','https://ip.lfe.mw.tum.de/sections/star.png'); */
-  $("#appStar").toggleClass("fas");
-} 
+  if(currentChannel.starred === false){
+    currentChannel.starred = true;
+  }
+  else{
+      currentChannel.starred = false;
+    } 
+}
 
 
 //6.4. Tap tabs

@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="jquery-3.3.1.min.js"></script>
-    <script src="main.js"></script>
     <script src="channels.js"></script>
+    <script src="main.js"></script>
     <link rel="stylesheet" 
     href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
@@ -28,35 +28,35 @@
 
 <!--chanenl area-->
 <ul>
-    <li onclick="switchChannel(programers); unfillStar();">#programers
+    <li  onclick="switchChannel(programers);">#programers
         <span class="channel-meta">
             <i class="fas fa-star"></i>
             <i class="fas fa-chevron-right"></i>
         </span>
     </li>
     <hr>
-    <li onclick="switchChannel(chemists); unfillStar();">#chemists
+    <li id="chemists" onclick="switchChannel(chemists);">#chemists
         <span class="channel-meta">
             <i class="far fa-star"></i>
             <i class="fas fa-chevron-right"></i>
         </span>
     </li>
     <hr>
-    <li onclick="switchChannel(family); unfillStar();" class="highlighted">#family
+    <li id="family" class="highlighted" onclick="switchChannel(family);">#family
         <span class="channel-meta">
             <i class="fas fa-star"></i>
             <i class="fas fa-chevron-right"></i>
         </span>
     </li>
     <hr>
-    <li onclick="switchChannel(friends); unfillStar();">#friends
+    <li id="friends" onclick="switchChannel(friends);">#friends
         <span class="channel-meta">
             <i class="fas fa-star"></i>
             <i class="fas fa-chevron-right"></i>
         </span>
     </li>
     <hr>
-    <li onclick="switchChannel(sisters); unfillStar();"> #sisters
+    <li id="sisters" onclick="switchChannel(sisters);"> #sisters
         <span class="channel-meta">
             <i class="fas fa-star"></i>
             <i class="fas fa-chevron-right"></i>
@@ -74,7 +74,7 @@
         <img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire picture">trending
     </button>
     <button id="favoritTab" onclick="selectTab('#favoritTab');">
-        <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture">favorit
+        <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star picture">favorites
     </button>
 </div>
 
@@ -89,7 +89,7 @@
         href="https://map.what3words.com/cheeses.yard.applies" 
         target="_blank" style="color:white;"> cheeses.yard.applies</a></b>
     </small></span>
-    <i class="fas far fa-star channel-meta" id="appStar" onclick="fillStar();"></i>  
+    <i class="fas fa-star channel-meta" id="appStar" onclick="toggleChannelStar();"></i>  
 </h1>
 
 <div id="chat-scroll">
