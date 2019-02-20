@@ -10,9 +10,11 @@ function switchChannel(channel) {
   $('#chatName').html(channel.name);
   $('#locateName').html(channel.createdBy);
 
-    //highlight the channells 
+//highlight the channells 
   $("ul li.highlighted").removeClass("highlighted");
   $(channel.name).addClass("highlighted");
+  //solution2(doesn't need IDs)
+  //$("li:contains("+ channel.name +")").addClass("highliighted");    it doesn't work!!!
   
   var star = (channel.starred) ? 'fas' : 'far';
   $("#appStar").removeClass("fas far");
