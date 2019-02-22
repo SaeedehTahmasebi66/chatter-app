@@ -27,14 +27,17 @@ function switchChannel(channel) {
 //Toggle the channel stars
 function toggleChannelStar() {
   $("#appStar").toggleClass("fas far");
-  
+  $(' li:contains(' + currentChannel.name + ') span .fa-star').toggleClass("fas far");
+  (currentChannel.starred)=!(currentChannel.starred);
 
-  if(currentChannel.starred === false){
+
+ /* if(currentChannel.starred === false){
     currentChannel.starred = true;
   }
   else{
       currentChannel.starred = false;
     } 
+ */   
 }
 
 
