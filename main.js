@@ -70,13 +70,13 @@ function Message(text){
   this.createdOn= days[d.getDay()] +", "+ months[d.getMonth()] +" "+ d.getDate() +"th, "+
    d.getHours() +":"+ d.getMinutes();
   this.expiresIn=  10; //new Date(Date.now() + (15*60*1000));
-  this.text= text;  //$("#textMessage").val();   نمیشه
+  this.text= text;  
   this.own= true;
 }
 
-var messageObject = new Message ("Hello Chatter");
-
-var stringRepr =`<div class="message">
+//takes a message object and returns a string representation of an HTML message element
+function createMessageElement(messageObject){
+  var stringRepr =`<div class="message">
 <h5>
     <b><a href="` +messageObject.createdBy+ `" 
         target="_blank">` + messageObject.createdBy+ `</a>
@@ -84,8 +84,12 @@ var stringRepr =`<div class="message">
 </h5>
 <p>` +messageObject.text+ `<button>+5 min</button></p>
 </div>`;
-
-function sendMessage(){
-  $("#chat-scroll").append(stringRepr);
+  return stringRepr;
 }
-
+//send button’s onclick event
+function sendMessage(txt){
+  var msg = new Message (txt);
+  var stringRepr = createMessageElement(msg);
+  $("#chat-scroll").append(stringRepr);
+  $("#textMessage").val();
+}
