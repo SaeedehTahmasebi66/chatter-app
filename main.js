@@ -53,8 +53,6 @@ function toggleEmojiBox() {
   $("div #emojis").toggle();
 }
 
-var d = new Date();
-
 var days = ["Sun", "Mon", "Tue", "Wed",
  "Thu", "Fri", "Sat"];
 
@@ -67,7 +65,8 @@ function Message(text){
   this.createdBy = currentLocation.what3words;
   this.longitude = currentLocation.longitude;
   this.latitude = currentLocation.latitude;
-  this.createdOn= days[d.getDay()] +", "+ months[d.getMonth()] +" "+ d.getDate() +"th, "+
+  var d = new Date();
+  this.createdOn = days[d.getDay()] +", "+ months[d.getMonth()] +" "+ d.getDate() +"th, "+
    d.getHours() +":"+ d.getMinutes();
   this.expiresIn=  10; //new Date(Date.now() + (15*60*1000));
   this.text= text;  
