@@ -153,6 +153,7 @@ h5{ /*5.4. Distribute the meta-data’s contents */
 #emojis-button{ /*5.5.put emojis-button on the very left, Considering to cascading order */
     display: flex;
     justify-content: flex-start;
+    width: 6%;
 }
 #emojis{ /*5.6.Set the style of emojis*/
     background-color: white;
@@ -177,5 +178,17 @@ h5{ /*5.4. Distribute the meta-data’s contents */
 }
 #emojis{
     display: none;
+}
+::placeholder{
+    color: grey;
+    font-style: italic;
+    font-size: 18px;
+}
+#textMessage {
+    font-size: 18px;
+    border: none;
+    width: 80%;
+    padding: 12px;
+    flex: 1 0 auto;
 }
 
