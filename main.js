@@ -92,4 +92,6 @@ function sendMessage(txt){
   var msg = new Message (txt);
   var stringRepr = createMessageElement(msg);
   $("#chat-scroll").append(stringRepr);
+  $('#textMessage').val('');
 }
+
