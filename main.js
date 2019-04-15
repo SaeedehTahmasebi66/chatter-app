@@ -55,11 +55,11 @@ function toggleEmojiBox() {
 
 var d = new Date();
 
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday",
- "Thursday", "Friday", "Saturday"];
+var days = ["Sun", "Mon", "Tue", "Wed",
+ "Thu", "Fri", "Sat"];
 
-var months = ["January", "February", "March", "April", "May", "June",
- "July", "August", "September", "October", "November", "December"];
+var months = ["Jan", "Feb", "Mar", "April", "May", "June",
+ "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 
 //create new messages conveniently
