@@ -88,8 +88,8 @@ function createMessageElement(messageObject){
 }
 //send button’s onclick event
 function sendMessage(txt){
+  var txt =$("#textMessage").val();
   var msg = new Message (txt);
   var stringRepr = createMessageElement(msg);
   $("#chat-scroll").append(stringRepr);
-  $("#textMessage").val();
 }
